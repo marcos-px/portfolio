@@ -1,0 +1,191 @@
+*{
+    /* padding: 0; */
+    margin: 0;
+    box-sizing: border-box;/*Faz com que cada div, se contente dentro da sua box*/
+    font-family: 'Poppins', sans-serif;
+}
+
+
+ul{
+    list-style: none; /*reitera que as listas não tenham estilo*/
+    font-size: 25px;
+    font-style:italic ;
+    font-weight: 700;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+h1, p{
+    color: #00ffff;
+    font-size: smaller;
+}
+h5{
+    color: #ff00ff;
+}
+
+
+body{
+   /*background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;*/
+    background: url(novofundook.png) no-repeat center center fixed;
+    background-size: cover;
+    background-position: 0 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border-bottom: 5px solid #7900ff; borda apenas embaixo. */
+    box-shadow:1px 1px 10px 4px #00ffff ;
+    /* border-bottom: 15px ridge #00ffff; */
+    margin-bottom: 45px;
+  
+}
+
+header ul{
+    display: flex;
+
+}
+
+
+header ul li{
+    padding: 5px;
+    border-right: 2px dashed #00ffff;
+    
+    
+}
+
+header ul li a:hover{
+    padding: 5px;
+    background-color: #00ffff;
+    color: #ff00ff;
+    /* text-decoration: underline; */
+    transition: 400ms;    
+}
+
+header ul li:first-child{
+  
+    border-left: 2px dashed #00ffff;
+}
+
+.container{
+    text-align: center;
+
+}
+.container .name h1{
+    font-size: 60px;
+
+
+}
+.container .name h5{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#arrow{
+    font-size: 50px;
+    cursor: pointer;
+    color: #00ffff;
+    animation: forwards 1s steps(5, start) infinite;
+}
+
+@keyframes blink{
+    to{
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form{
+    width: 40%;
+    margin: 0 auto;
+    padding: 15px;
+    border: none;
+}
+
+
+.form input{
+    width: 200px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button{
+    width: 25%;
+    color: #ff00ff;
+    font-weight: 100px;
+    padding: 5px 10px;
+    background-color: #00ffff;
+    font-weight: 600px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    margin-top: 20px;
+}
+
+.form button:hover{
+    padding: 5px;
+    background-color:#ff00ff;
+    color: #ffffff;
+    text-decoration: underline;
+    transition: 400ms; 
+}
+
+@media only screen and (max-width: 768px){}
+.form {width: 100%;
+    
+}
+@media only screen and (max-width: 480px) {
+    .container .name h1{
+        font-size: 30px
+    }
+    .container .name h5{
+        font-size: 15px;
+    }
+    header ul li{
+        padding: 5px;
+        border: 2px dashed #00ffff;
+}
+    ul{
+    list-style: none; /*reitera que as listas não tenham estilo*/
+    font-size: 20px;
+    font-style:italic ;
+    font-weight: 200;}
+
+    header ul li{
+        padding: 1px;
+        border-right: 2px dashed #00ffff;
+        color: aliceblue;}
+    
+header ul{
+    display:inline ;
+}
+#about p{
+    max-width: 80%;
+    text-align: justify;
+
+}
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c76ae36f8a.js" crossorigin="anonymous"></script>
+    <title>Marcos Teixeira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,200;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logosite" src="logomarcosok.png" alt="logo">
+        </div>
+        <ul id="lista" >
+            <li>
+                <a href="https://www.linkedin.com/in/marcos-teixeira-444295128/" target="_blank" style="color:rgb(255, 255, 255) ;">Meu Linkedin</a>
+            </li>
+            <li>
+                <a href="https://wa.me/+5531982721348" target="_blank"style="color:rgb(255, 255, 255) ;">meu whats</a>
+            </li>
+            <li>
+                <a href="mailto:marcxstx@gmail.com" target="_blank"style="color:rgb(255, 255, 255) ;">meu Email</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Marcos Teixeira</h1>
+                <h5>Desenvolvedor Full Stack em Formação| Head Operacional Crédito Consignado. </h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+
+            </div>
+            
+
+            <div id="about" >
+                <p>
+                    /*Oi.:-) Eu sou o Marcos. 
+
+                    Trabalho há 6 anos da Mover Financeira, uma micro empresa na área de Empréstimos e Financiamentos e estou mudando de área. Aqui eu tomo conta de muita coisa, mas o principal é o atendimento humanizado que prezo muito e toda a parte operacional.  
+                    Eu faço Ciência da Computação com enfase em FullStack na Faculdade Descomplica. Já tenho curso Técnico em Administração. Gosto muito da área. Agora estou me tornando um 'Hacker' pela Gama Academy, (#GoGama 💚) aprendendo todo o necessário para me tornar um Desenvolvedor. Mudar de carreira é difícil, mas topo o desafio. 
+                    Quer falar comigo? 
+                    Uai.
+                    Me chama aí pra gente bater um papo! 
+                    Té logo!*/
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="email" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+<script>
+    function displayAbout(){
+        var arrow = document.getElementById('animation');
+        arrow.classList.toggle('rotate');
+        var display = document.getElementById('about');
+        display.classList.toggle('active');
+    }
+</script>
+<footer>
+    &copy;Marcos Teixeira - 2022
+</footer>
+    
+</body>
+</html>
